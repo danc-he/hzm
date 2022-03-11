@@ -24,7 +24,7 @@ int  bmp_load(BMP *pb, char *file)
     fread(data, 1, (pb->stride * pb->height), fp);
     pb->pdata = data;
 
-printf("Source BMP Info :\n");
+    printf("Source BMP Info :\n");
     printf("bfType             = %d \n", pheader->bfType);
     printf("bfSize             = %d \n", pheader->bfSize);
     printf("bfReserved1        = %d \n", pheader->bfReserved1);
